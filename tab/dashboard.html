@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Athlete Profile</title>
+  <link rel="stylesheet" href="../CSS/dashboard.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="avatar"></div>
+      <div class="welcome">
+        <p>Welcome,</p>
+        <h2>Athlete</h2>
+      </div>
+
+      <nav class="side-nav">
+        <a href="#">Profile</a>
+        <a href="#" class="active">Dashboard</a>
+      </nav>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main">
+
+      <!-- FILA SUPERIOR: TARJETAS DE PROMEDIOS -->
+      <section class="top-cards">
+        <div class="card">
+          <h3>Luteal Phase Parameters</h3>
+          <p>Performance Averages - Week 1</p>
+          <p>BPM: 80</p>
+          <p>SpO2: 100%</p>
+          <p>Temperature: 37°C</p>
+        </div>
+        <div class="card">
+          <h3>Menstruation Parameters</h3>
+          <p>Performance Averages - Week 1</p>
+          <p>BPM: 80</p>
+          <p>SpO2: 100%</p>
+          <p>Temperature: 37°C</p>
+        </div>
+        <div class="card">
+          <h3>Folicular Phase Parameters</h3>
+          <p>Performance Averages - Week 1</p>
+          <p>BPM: 80</p>
+          <p>SpO2: 100%</p>
+          <p>Temperature: 37°C</p>
+        </div>
+      </section>
+
+      <!-- GRÁFICA PRINCIPAL -->
+      <section class="chart-card">
+        <!--<div class="chart-header">
+          <span>Magnitude</span>
+          <span>Weeks</span>
+        </div>-->
+        <div class="chart-placeholder">
+          <img alt="Gráfica MATLAB" src="../graficas/Grafico_ECG.jpeg" width="1000" height="250"/>
+        </div>
+      </section>
+
+      <!-- PARTE INFERIOR: CÍRCULO + EXERCISE LOG -->
+      <section class="bottom-row">
+        <div class="circle-card">
+          <div class="circle">
+            <img alt="Gráfica MATLAB" src="../fotos/CM_testingdays.png" width="300"/>
+          </div>
+        </div>
+
+        <div class="exercise-log card">
+          <h3>Exercise Log</h3>
+
+          <div class="exercise-row">
+            <span class="label">Type 1</span>
+            <div class="bar">
+              <div class="bar-fill" style="width: 70%;"></div>
+            </div>
+          </div>
+
+          <div class="exercise-row">
+            <span class="label">Type 2</span>
+            <div class="bar">
+              <div class="bar-fill" style="width: 40%;"></div>
+            </div>
+          </div>
+
+          <div class="exercise-row">
+            <span class="label">Type 3</span>
+            <div class="bar">
+              <div class="bar-fill" style="width: 85%;"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>

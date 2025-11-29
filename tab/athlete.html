@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>LIA - Athlete</title>
+        <link rel="stylesheet" href="../CSS/athlete.css">
+    </head>
+    <body>
+        <div class="container">
+        <nav class="menu">
+            <ul>
+                <li class="logo"><img src="../fotos/exercise.png"></li>
+                <li><a href="..\LIAwebsite.html">Home</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="aboutus.html">About LIA</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="results.html" class="login-btn"><span>Log In</span></a></li>
+            </ul>
+        </nav> 
+        <div class="results_intro">
+            <h1>Results</h1>
+            <p>Welcome Daniela!<br> 
+               Check out your results and get better!</p>
+        </div>
+        </div>
+        <div class="downloadraw">
+            <h2 id="daniela-leo">
+                Daniela Leo
+            </h2>
+            <a class="datap1t1" download="Daniela Leo.csv" href="../csvdata/Daniela Leo.csv">
+                Download Raw Data for 5/11/2025
+            </a>
+            <h3>These are the results of your last test</h3>
+        </div>
+        <div class="dig_biom">
+            <div class="sensors">
+                <div class="BPM">
+                    <h2>Mean Beats per minute</h2>
+                    <h3>80</h3>
+                </div>
+                <div class="Oxy">
+                    <h2>Mean Oxygen Saturation</h2>
+                    <h3>100%</h3>
+                </div>
+                <div class="temp">
+                    <h2>Mean Temperature</h2>
+                    <h3>37.5°</h3>
+                </div>
+            </div>
+            <div class="graph-biom">
+                <h2>Biometric variation over time</h2>
+                <iframe id="grafica" src="grafica_tiempo_real.html"></iframe>
+                <script>
+                    // Refresca la gráfica cada 2 segundos para mostrar las actualizaciones
+                    setInterval(() => {
+                    const iframe = document.getElementById('grafica');
+                    iframe.src = iframe.src.split('?')[0] + '?t=' + new Date().getTime();
+                    }, 2000);
+                </script>
+            </div>
+        </div>
+
+
+
+
+
+    </body>
+</html>

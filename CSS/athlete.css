@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: #42455a;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 50vh;
+    background: #42455a;
+    position: relative;
+}
+
+p {
+    color: #b2b1b1;
+}
+
+.menu ul {
+    display: inline-flex;
+    margin: 50px;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 0 20px;
+    color: #b2b1b1;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 30px;
+    margin-top: -7px;
+    margin-right: 48px;
+}
+
+a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.login-btn {
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#42455a,#42455a),
+                      radial-gradient(circle at top left, #a900fd, #19d7f8);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.login-btn span {
+    display: block;
+    padding: 8px 22px;
+}
+
+.results_intro {
+    width: 40%;
+    position: absolute;
+    top: 25%;
+    left: 130px;
+    color: #fff;
+}
+
+.results_intro h1 {
+    font-size: 43px;
+    max-width: 640px;
+    position: relative;
+    margin-left: 40px;
+    padding-top: 100px;
+}
+
+.results_intro p {
+    max-width: 650px;
+    font-size: 15px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: #919191;
+}
+
+.downloadraw{
+    margin-left: 170px;
+    height: 20%;
+}
+
+.downloadraw h2{
+    color: #19d7f8;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.downloadraw h3{
+    color: #fff;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    font-size: 25px;
+}
+
+
+.downloadraw a{
+    color: #919191;
+    line-height: 25px;
+}
+
+
+.biometrics-info, .dig_biom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    background: #42455a;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.analog{
+    width: 100%;
+    background-color: #42455a;
+}  
+
+.analog h2{
+    font-size: 33px;
+    text-align: center;
+    color: #fff;
+}
+
+.EMG, .ECG {
+    width: 48%;                 
+    height: 70%;
+    color: #fff;
+    background: #535674;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.EMG-text h2, .ECG-text h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.EMG-text p, .ECG-text p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #ccc;
+    text-align: center;
+}
+
+iframe {
+    width: 90%;
+    height: 80%;
+    position: relative;
+    margin-left: 20px;
+}
+
+.digital{
+    width: 100%;
+    background-color: #42455a;
+}  
+
+.digital h2{
+    font-size: 33px;
+    text-align: center;
+    color: #fff;
+}
+
+.sensors{
+    background:#42455a;
+    box-sizing: border-box;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+}
+
+.BPM h2, .Oxy h2, .temp h2{
+    color: #b2b1b1;
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+.BPM h3, .Oxy h3, .temp h3{
+    color: #fff;
+    font-size: 28px;
+    padding-bottom: 40px;
+}
+
+.graph-biom{
+    width: 48%;                 
+    height: 70%;
+    color: #fff;
+    background: #535674;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.graph-biom h2{
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 20px;
+}

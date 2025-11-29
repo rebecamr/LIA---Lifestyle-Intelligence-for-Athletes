@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: #42455a;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 50vh;
+    background: #42455a;
+    position: relative;
+}
+
+.menu ul {
+    display: inline-flex;
+    margin: 50px;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 0 20px;
+    color: #b2b1b1;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 30px;
+    margin-top: -7px;
+    margin-right: 48px;
+}
+
+a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.active {
+    color: #19dafa !important;
+}
+
+.login-btn {
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#42455a,#42455a),
+                      radial-gradient(circle at top left, #a900fd, #19d7f8);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.login-btn span {
+    display: block;
+    padding: 8px 22px;
+}
+
+.results_intro {
+    width: 50%;
+    position: absolute;
+    top: 25%;
+    left: 130px;
+    color: #fff;
+}
+
+.results_intro h1 {
+    font-size: 43px;
+    max-width: 640px;
+    position: relative;
+    margin-left: 40px;
+    padding-top: 100px;
+}
+
+.results_intro p {
+    max-width: 650px;
+    font-size: 15px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: #919191;
+}
+
+/* CONTENEDOR DE TUS 3 COLUMNAS */
+.Loginbanner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background: #42455a;
+}
+
+.profile {
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center; /* CENTRA TODO */
+}
+
+.profile h2 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.profile p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #919191;
+    max-width: 100%;
+    padding-top: 20px;  /* ← corregido (antes tenía coma) */
+}
+
+.loginbtn2 {
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#42455a,#42455a),
+                      radial-gradient(circle at top left, #a900fd, #19d7f8);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+    display: inline-block; /* ← NECESARIO PARA CENTRAR */
+    margin-top: 15px;      /* opcional */
+}
+
+.loginbtn2 span {
+    display: block;
+    padding: 8px 22px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+    .Loginbanner {
+        grid-template-columns: 1fr;
+    }
+
+    .results_intro {
+        position: static;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .results_intro h1,
+    .results_intro p {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .login-btn {
+        right: 20px;
+    }
+}

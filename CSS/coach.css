@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: #42455a;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 50vh;
+    background: #42455a;
+    position: relative;
+}
+
+p {
+    color: #b2b1b1;
+}
+
+.menu ul {
+    display: inline-flex;
+    margin: 50px;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 0 20px;
+    color: #b2b1b1;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 30px;
+    margin-top: -7px;
+    margin-right: 48px;
+}
+
+a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.active {
+    color: #19dafa !important;
+}
+
+.login-btn {
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#42455a,#42455a),
+                      radial-gradient(circle at top left, #a900fd, #19d7f8);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.login-btn span {
+    display: block;
+    padding: 8px 22px;
+}
+
+.results_intro {
+    width: 50%;
+    position: absolute;
+    top: 25%;
+    left: 130px;
+    color: #fff;
+}
+
+.results_intro h1 {
+    font-size: 43px;
+    max-width: 640px;
+    position: relative;
+    margin-left: 40px;
+    padding-top: 100px;
+}
+
+.results_intro p {
+    max-width: 650px;
+    font-size: 15px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: #919191;
+}
+
+.downloadraw{
+    margin-left: 170px;
+    height: 70%;
+}
+
+.downloadraw h1{
+    color: #19d7f8;
+}
+
+
+.downloadraw h2{
+    color: #fff;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.downloadraw a{
+    color: #919191;
+    line-height: 25px;
+}

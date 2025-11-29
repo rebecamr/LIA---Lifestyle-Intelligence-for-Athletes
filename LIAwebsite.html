@@ -1,0 +1,108 @@
+<html> 
+<head>
+    <title>LIA</title>
+    <link rel="stylesheet" href="CSS/LIAcss.css">
+</head>
+<body>
+    <div class="container">
+       <nav class="menu">
+            <ul>
+                <li class="logo"><img src="fotos/exercise.png"></li>
+                <li><a href="LIAwebsite.html">Home</a></li>
+                <li><a href="tab/results.html">Results</a></li>
+                <li><a href="tab/aboutus.html">About LIA</a></li>
+                <li><a href="tab/contact.html">Contact</a></li>
+                <li><a href="tab/results.html" class="login-btn"><span>Log In</span></a></li>
+            </ul>
+        </nav> 
+       <div class="banner">
+            <div class="app-text">
+                <h1>LIA <br> Lifestyle Intelligente for Athletes</h1>
+                <p>Intelligent measurement tools empowering <br> 
+                    a new understanding of women's bodies in sports.</p>
+            <!--<div class="play-btn">
+                    <div class="play-btn-inner"><i class="fa fa-play">
+                    </i></div>
+                </div>
+            -->
+
+            </div>
+        </div>
+        <div class="app-picture">
+            <img src="smart-watch.png">
+        </div>
+        
+    </div>
+ 
+    <div class="analog">
+        <h2>Analog biometrics</h2>
+    </div>
+
+    <div class="biometrics-info">  
+
+        <div class="EMG">
+            <div class="EMG-text">
+                <h2>EMG over time</h2>
+                <p>Information on the EMG, maximal magnitude reached, etc.</p>
+            </div>
+            <iframe id="grafica" src="grafica_tiempo_real.html"></iframe>
+            <script>
+                // Refresca la gráfica cada 2 segundos para mostrar las actualizaciones
+                setInterval(() => {
+                const iframe = document.getElementById('grafica');
+                iframe.src = iframe.src.split('?')[0] + '?t=' + new Date().getTime();
+                }, 2000);
+            </script>
+        </div>
+        <div class="ECG">
+            <div class="ECG-text">
+                 <h2>ECG over time</h2>
+                <p>Information on the ECG, characteristics, etc.</p>
+            </div>
+            <iframe id="grafica" src="grafica_tiempo_real.html"></iframe>
+            <script>
+                // Refresca la gráfica cada 2 segundos para mostrar las actualizaciones
+                setInterval(() => {
+                const iframe = document.getElementById('grafica');
+                iframe.src = iframe.src.split('?')[0] + '?t=' + new Date().getTime();
+                }, 2000);
+            </script>
+        </div>
+
+            
+    </div>
+
+    <div class="digital">
+        <h2>Digital biometrics</h2>
+    </div>
+
+    <div class="dig_biom">
+        <div class="sensors">
+            <div class="BPM">
+                <h2>Mean Beats per minute</h2>
+                <h3>80</h3>
+            </div>
+            <div class="Oxy">
+                <h2>Mean Oxygen Saturation</h2>
+                <h3>100%</h3>
+            </div>
+            <div class="temp">
+                <h2>Mean Temperature</h2>
+                <h3>37.5°</h3>
+            </div>
+        </div>
+        <div class="graph-biom">
+            <h2>Biometric variation over time</h2>
+            <iframe id="grafica" src="grafica_tiempo_real.html"></iframe>
+            <script>
+                // Refresca la gráfica cada 2 segundos para mostrar las actualizaciones
+                setInterval(() => {
+                const iframe = document.getElementById('grafica');
+                iframe.src = iframe.src.split('?')[0] + '?t=' + new Date().getTime();
+                }, 2000);
+            </script>
+        </div>
+    </div>
+
+
+</body>
